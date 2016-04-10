@@ -1,16 +1,18 @@
 # RCTScanditBarcodeScanner
 iOS React Native UI Component for SCANDIT Barcode Scanner SDK
 
-Hey folks, i've writte a simple UI Component wrapper for SanditBarcodeScanner.
+Hey folks, i've written a simple UI Component wrapper for SanditBarcodeScanner.
 Feel free to use and contribute.
 
 
 
 ## Installation
-1. Make sure you copied all *.m and *.h files in xcode into your Project.
+1. Install Scandit. Remeber to set AppKey in AppDelegate.m
+
+2. Make sure you copied all *.m and *.h files in xcode into your Project.
 Prefered way is to drag them into xcode: So xcode should automatically link them to build path.
 
-2. Include ScanditBarcodeScanner from the provided JS File like this:
+3. Include ScanditBarcodeScanner from the provided JS File like this:
 
 ```import ScanditBarcodeScannerView from './ScanditBarcodeScanner';```
 
