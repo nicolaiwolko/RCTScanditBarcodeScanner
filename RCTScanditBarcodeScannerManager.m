@@ -81,6 +81,7 @@ RCT_EXPORT_METHOD(setSettings:(NSDictionary *)settings)
     }
   }
   
+  free(properties);
   [scanditBarcodeScanner.scanditBarcodePicker applyScanSettings:scanditBarcodeSettings completionHandler:nil];
 }
 
