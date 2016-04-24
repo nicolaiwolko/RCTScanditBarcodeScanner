@@ -22,6 +22,22 @@ class ScanditBarcodeScannerView extends React.Component {
 		NativeModules.ScanditBarcodeScannerManager.setSettings(settings);
 	}
 
+	static resumeScanning() {
+		NativeModules.ScanditBarcodeScannerManager.resumeScanning();
+	}
+
+	static pauseScanning() {
+		NativeModules.ScanditBarcodeScannerManager.pauseScanning();
+	}
+
+	static startScanning() {
+		NativeModules.ScanditBarcodeScannerManager.startScanning();
+	}
+
+	static stopScanning() {
+		NativeModules.ScanditBarcodeScannerManager.stopScanning();
+	}
+
 	componentWillUnmount() {
 		this.barcodePickerDidScan.remove();
 	}
