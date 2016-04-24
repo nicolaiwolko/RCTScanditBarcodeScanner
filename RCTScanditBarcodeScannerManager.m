@@ -17,6 +17,26 @@
 
 RCT_EXPORT_MODULE()
 
+RCT_EXPORT_METHOD(startScanning)
+{
+  [scanditBarcodeScanner.scanditBarcodePicker startScanning];
+}
+
+RCT_EXPORT_METHOD(stopScanning)
+{
+  [scanditBarcodeScanner.scanditBarcodePicker stopScanning];
+}
+
+RCT_EXPORT_METHOD(pauseScanning)
+{
+  [scanditBarcodeScanner.scanditBarcodePicker pauseScanning];
+}
+
+RCT_EXPORT_METHOD(resumeScanning)
+{
+  [scanditBarcodeScanner.scanditBarcodePicker resumeScanning];
+}
+
 RCT_EXPORT_METHOD(setSettings:(NSDictionary *)settings)
 {
   SBSScanSettings *scanditBarcodeSettings = [SBSScanSettings defaultSettings];
